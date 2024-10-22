@@ -29,5 +29,7 @@ class Veicolo {
 }
 
 //creo una nuova instanza della classe veicolo
-const Veicolo1 = new Veicolo('Fiat', 2019, 'blu');
+const veicolo1 = new Veicolo('Fiat', 2019, 'blu');
 
+veicolo1.informazioni();
+console.log(`Età del veicolo: ${veicolo1.calcolaEta()} anni`);
