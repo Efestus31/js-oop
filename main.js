@@ -18,6 +18,12 @@ class Veicolo {
         console.log(`Auto di marchio; ${this.marca} dell'anno ${this.anno} di colore ${this.colore}`);
         
     }
+    calcolaEta(){
+        const data = new Date();
+        const annoCorrente = data.getFullYear();
+        const eta = annoCorrente - this.anno;
+        return eta
+    }
 
     
 }
